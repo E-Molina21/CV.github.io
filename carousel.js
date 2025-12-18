@@ -1,22 +1,23 @@
 document.querySelectorAll(".carousel").forEach(carousel => {
   const images = carousel.querySelectorAll(".carousel-img");
-  const prevBtn = carousel.querySelector(".prev");
-  const nextBtn = carousel.querySelector(".next");
+  const prev = carousel.querySelector(".prev");
+  const next = carousel.querySelector(".next");
 
-  let current = 0;
+  let index = 0;
 
-  function show(index) {
+  function show(i) {
     images.forEach(img => img.classList.remove("active"));
-    images[index].classList.add("active");
+    images[i].classList.add("active");
   }
 
-  prevBtn.onclick = () => {
-    current = (current - 1 + images.length) % images.length;
-    show(current);
+  prev.onclick = () => {
+    index = (index - 1 + images.length) % images.length;
+    show(index);
   };
 
-  nextBtn.onclick = () => {
-    current = (current + 1) % images.length;
-    show(current);
+  next.onclick = () => {
+    index = (index + 1) % images.length;
+    show(index);
   };
 });
+
