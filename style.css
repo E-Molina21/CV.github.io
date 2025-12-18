@@ -1,9 +1,9 @@
 :root {
-  --bg: #819BB8;
-  --card: #60778F;
-  --text: #1f2933;
-  --muted: #6b7280;
-  --accent: #2563eb;
+  --bg: #e6f2ee;
+  --card: #f1f8f5;
+  --text: #0f2f25;
+  --muted: #4f7a6c;
+  --accent: #023B2C;
 }
 
 * {
@@ -23,8 +23,8 @@ body {
 header {
   position: sticky;
   top: 0;
-  background: var(--card);
-  border-bottom: 1px solid #e5e7eb;
+  background: var(--accent);
+  border-bottom: none;
   z-index: 10;
 }
 
@@ -64,6 +64,7 @@ main {
 }
 
 section {
+  background: var(--card);
   background: var(--card);
   padding: 2rem;
   border-radius: 14px;
@@ -134,5 +135,12 @@ footer {
   padding: 2rem 1rem 3rem;
   color: var(--muted);
   font-size: 0.85rem;
+}
+/* ---------- Full Width Section ---------- */
+.full-width {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  border-radius: 0;
+  background: #d9ede6;
 }
 
