@@ -83,16 +83,16 @@ section h2 {
 
 /* ---------- Projects ---------- */
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
+
 
 .project-card {
   border: 1px solid #e5e7eb;
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
   background: #fff;
+  padding-bottom: 0.5rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -111,7 +111,7 @@ section h2 {
 
 
 .project-card .content {
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 .project-card h3 {
@@ -167,10 +167,10 @@ section h2 {
 
 .carousel-img {
   width: 100%;
-  height: 420px;
-  object-fit: cover;
+  max-height: 420px;
+  object-fit: contain;
   display: none;
-  border-radius: 12px;
+  background: #e6f2ee;
 }
 
 .carousel-img.active {
@@ -213,6 +213,7 @@ footer {
   border-radius: 0;
   background: #d9ede6;
 }
+
 
 
 
